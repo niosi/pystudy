@@ -16,6 +16,6 @@ naturechain = itertools.chain("ABC", "DEF", "XYZ")  # 串联迭代器用户将�
 #     print(i, end=',')
 
 
-naturegroudby = itertools.groupby("AAABBBCCCADDDXXXZZZBBBaavvAccdd", lambda a: a.upper()) # 分组迭代器用于迭代挑选重复的数据(连续的)
-for j,group in naturegroudby:
+naturegroudby = itertools.groupby("AAABBBCCCADDDXXXZZZBBBaavvAccdd", lambda a: a.upper())  # 分组迭代器用于迭代挑选重复的数据(连续的)
+for j, group in naturegroudby:
     print(j, list(group))
